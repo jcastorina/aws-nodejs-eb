@@ -11,6 +11,7 @@ var app = express()
 
 app.set('view engine', 'pug')
 app.set('views', __dirname + '/views')
+
 app.use(bodyParser.urlencoded({extended:false}))
 
 app.get('/', function (req, res) {
